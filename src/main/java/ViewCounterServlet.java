@@ -13,9 +13,16 @@ public class ViewCounterServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+        String reset = req.getParameter("reset");
         resp.setContentType("text/html");
         PrintWriter out = resp.getWriter();
-        out.println("<h1>You have viewed this page " + count++ + " times!</h1>");
+
+        if(reset == null){
+            count++;
+        } else if(reset.equalsIgnoreCase("reset")) {
+            count = 1;
+        }
+        out.println("<h1>You have viewed this page " + count + " times!</h1>");
 
     }
 }
