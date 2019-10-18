@@ -7,7 +7,7 @@ import java.io.PrintWriter;
 
 
 @WebServlet("/bboc")
-public class BBOC extends HttpServlet {
+public class BbocServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException {

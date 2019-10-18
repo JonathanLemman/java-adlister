@@ -10,9 +10,14 @@ public class HelloWorldServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException {
+        String name = req.getParameter("name");
         res.setContentType("text/html");
         PrintWriter out = res.getWriter();
-        out.println("<h1>Hello, World!</h1>");
+        if(name == null) {
+            out.println("<h1>Hello, World!</h1>");
+        }else {
+            out.println("<h1>Hello, " + name + "!</h1>");
+        }
 
     }
 }
