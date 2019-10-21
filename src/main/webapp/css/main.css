@@ -1,0 +1,26 @@
+/*body {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    text-align: center;*/
+/*}*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    justify-content: end;
+}
+
+li {
+    color: aliceblue;
+    list-style: none;
+    padding: 1em;
+}
