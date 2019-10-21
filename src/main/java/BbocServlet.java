@@ -14,6 +14,5 @@ public class BbocServlet extends HttpServlet {
         res.setContentType("text/html");
         PrintWriter out = res.getWriter();
         out.println("<h1>Hello, from BBOC!</h1>");
-
     }
 }
