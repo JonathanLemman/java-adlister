@@ -17,10 +17,13 @@
 <form action="/display-form.jsp" method="post">
     <label for="username">Username: </label>
     <input id="username" type="text" name="username" placeholder="Enter Username">
+    <br>
     <label for="password">Password: </label>
     <input id="password" type="password" name="password" placeholder="Enter Password">
+    <br>
     <label for="email">Email: </label>
     <input id="email" type="email" name="email" placeholder="Enter Email">
+    <br>
     <button>Press Me!</button>
 </form>
 

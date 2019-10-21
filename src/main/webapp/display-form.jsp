@@ -15,6 +15,8 @@
     <h1>Here is your info!</h1>
 
     <h3>Username: </h3>
+<%-- Expression Language same as next line  --%>
+    <p>${param.username}</p>
     <p><%= request.getParameter("username") %></p>
 
     <h3>Password: </h3>
