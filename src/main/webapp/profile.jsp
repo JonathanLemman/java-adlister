@@ -14,7 +14,7 @@
 <body>
 <%@include file="partials/navbar.jsp"%>
 
-<h1>Welcome Home!</h1>
+<h1 class="text-center">Welcome Home!</h1>
 
 </body>
 </html>
